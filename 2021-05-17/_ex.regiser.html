@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>회원가입</title>
+</head>
+<body>
+    <!-- https://el-homme.com/member/join.html -->
+    <!-- table 4개 -->
+    <table border="1">
+        <tr>
+            <td>회원구분 *</td>
+            <td>
+                   <input checked name="guest" type="radio"><a>개인회원</a>
+                   <input name="guest" type="radio"><a>사업자회원</a>
+                   <input name="guest" type="radio"><a>외국인회원(foreigner)</a>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <a>기본정보</a>
+    <table border="1">
+        <tr>
+            <td>아이디 *</td>
+            <td><input type="id"><a> 아이디를 입력해 주세요.(영문소문자/숫자,4~16자)</a></td>
+        </tr>
+        <tr> 
+            <td>비밀번호 *</td>
+            <td><input type="password"><a> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</a></td>
+        </tr>
+        <tr> 
+            <td>비밀번호 확인 *</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr> 
+            <td>비밀번호 확인 질문 *</td>
+            <td>
+            <select>
+                <option>기억에 남는 추억의 장소는?</option>
+                <option>자신의 인생의 좌우명은?</option>
+            </select></td>
+        </tr>
+        <tr> 
+            <td>비밀번호 확인 답변 *</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr> 
+            <td>이름 *</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr> 
+            <td>주소 *</td>
+            <td><input type="text"> <input type="submit" value="우편번호 >">
+            <br>
+            <input type="text"><a> 기본주소</a>
+            <br>
+            <input type="text"><a> 나머지주소</a>
+            </td>
+        </tr>
+        <tr> 
+            <td>일반전화 *</td>
+            <td>
+                <select>
+                    <option>02</option>
+                    <option>053</option>
+                </select>
+                <a>-</a>
+                <input type="text">
+                <a>-</a>
+                <input type="text">
+            </td>
+        </tr>
+        <tr> 
+            <td>휴대전화 *</td>
+            <td>
+                <select>
+                    <option>010</option>
+                    <option>011</option>
+                </select>
+                <a>-</a>
+                <input type="tel">
+                <a>-</a>
+                <input type="tel">
+            </td>
+        </tr>
+        <tr> 
+            <td>이메일 *</td>
+            <td><input type="email"></td>
+        </tr>
+    </table>
+    <br>
+    추가정보
+    <table border="1">
+        <tr>
+            <td>생년월일</td>
+            <td>
+            <input type="text">년<input type="text">월<input type="text">일
+            <input checked name="year" type="radio"><a>양력</a>
+            <input name="year" type="radio"><a>음력</a>
+            </td> 
+        </tr>
+        <tr>
+            <td>결혼기념일</td>
+            <td><input type="text">년<input type="text">월<input type="text">일</td>
+        </tr>
+        <tr>
+            <td>배우자생일</td>
+            <td><input type="text">년<input type="text">월<input type="text">일</td>
+        </tr>
+        <tr>
+            <td>지역</td>
+            <td>
+                <select> 
+                    <option>선택</option>
+                    <option>서울</option>
+                    <option>대구</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <a>전체동의</a>
+    <div><input type="checkbox">이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</div>
+    <table border="1">
+        <tr>
+            <th>[필수] 이용약관 동의
+                <br>
+                <td>제2조(정의)
+                    ①“몰” 이란 OO 회사가 재화 또는 용역(이하 “재화등”이라 함)을 이용자에게 제공하기 위하여 컴퓨터등 정보통신설비를 이용하여 재화등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</td>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
