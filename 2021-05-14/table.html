@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>요소(table)</title>
+</head>
+<body>
+    <table border="1">
+        <caption>
+            <!-- caption 요소 
+                - 해당 table 의 제목 
+                - 권장사항, 선택적 
+            -->
+            어떤 표
+        </caption>
+        <thead style="background-color: dimgray; color:white;">
+            <!-- thead 요소 
+                - (주로) tbody에 들어가는 내용의 범례(Legend)
+                - 선택적
+            -->
+            <tr>
+                <!-- 행 요소 : tr -->
+                <th>
+                    <!-- 범례 셀(열) 요소 : th
+                        - SEO 의미 있음
+                    -->
+                    Element
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody style="background-color: lightblue;">
+            <!-- tbody 요소 
+                - 테이블의 주요 내용이 들어감 
+                - 필수적 (표시할 내용이 없어도 "표시할 내용이 없다"고 알려야 됨.)
+            -->
+            <tr>
+                <th> <a href="#">&lt;base&gt;</a> </th>
+                <td> 설명 </td>
+            </tr>
+            <tr>
+                <th rowspan="2"> 
+                    <!-- rowspan : 해당 셀이 통합할 행의 수 -->
+                    <a href="#">&lt;head&gt;</a> 
+                </th>
+                <td> 설명 1 </td>
+            </tr>
+            <tr>
+                <td> 설명 2 </td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: lightseagreen;">
+            <!-- tfoot 요소
+                - (주로) tbody에 들어가는 내용의 요약(Summary), 개요 
+                - 선택적
+            -->
+            <tr>
+                <td colspan="2">
+                    <!-- 
+                        - colspan 속성 : 통합할 열의 수
+                    -->
+                    요약
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- table 요소 
+        - 자료(데이터, 리소스 등)의 열거 외의 목적으로 이용해선 안 된다.
+        - 페이지 레이아웃 잡겠다고 table 쓰지 말라는 뜻.
+    -->
+</body>
+</html>
