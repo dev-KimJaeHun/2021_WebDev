@@ -1,0 +1,27 @@
+body > div {
+    background-color: dimgray;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+body > div > div {
+    border-radius: 50%;
+    padding: 25px;
+}
+
+body > div > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+body > div > div:nth-child(1) {
+    background-color: red;
+}
+
+body > div > div:nth-child(2) {
+    background-color: orange;
+}
+
+body > div > div:nth-child(3) {
+    background-color: green;
+}

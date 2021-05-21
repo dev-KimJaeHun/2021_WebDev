@@ -1,0 +1,64 @@
+body > div.container > a.button {
+    /* https://htmlcolorcodes.com/ */
+    background-color: #eaeaea;
+    /*background-color: rgb(255, 255, 255);*/
+    /*background-color: gainsboro;*/
+
+    border: 1px solid #dadada;
+    /* border: [굵기] [스타일] [색상] */
+    /* MDN :  */
+
+    border-radius: 9999px;
+
+    cursor: pointer;
+    padding: 5px 10px;
+    /* padding : 내부 여백, (별도의 조치를 취하지 않았을 때) padding 값은 요소 크기에 영향을 미친다.
+    - [x] : 위, 아래, 좌, 우 전부 x 만큼
+    - [x] [y] : 위, 아래 : x | 좌, 우 : y
+    - [a] [b] [c] [d] : 상, 우, 하, 좌
+    */
+    /*padding-top: ;*/
+    /*padding-right: ;*/
+    /*padding-bottom: ;*/
+    /*padding-left: ;*/
+
+    color: black;
+    text-decoration: none;
+
+    user-select: none;
+}
+
+body > div.container > a.button:hover {
+    border: 1px solid dodgerblue;
+}
+
+body > div.container > a.button:active {
+    background-color: #dadada;
+}
+
+/* first-child : 첫번째 요소 = nth-child(1) */
+/* last-child : 마지막 요소 */
+/* nth-child(even) : 짝수 번째 요소 */
+/* nth-child(odd) : 홀수 번째 요소 */
+/* not(:조건) : 부정 */
+body > div.container > a.button:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+body > div.container {
+    width: 500px;
+    /* width : 가로 크기 */
+    height: 500px;
+    /* height : 세로 크기 */
+    background-color: dimgray;
+    position: relative;
+}
+
+body > div.container > div.item {
+    width: 100px;
+    height: 100px;
+    display: block;
+    /* display : 모양세
+        - none : 만들지 않음
+        - block : 크기 조절 가능 & 한줄을 다 차지하려 한다.
+        - inline : 크기 조절 불가능 & 본연의 공간만 차지한다.
+        - inline-block : 크기 조절 가능 & 본연의 공간만 차지한다.
+    */
+}
+
+body > div.container > div.item:nth-child(1) {
+    /* nth-child(x) : x 번째 요소, 앞에 정의한 선택자에 의해 선택된 요소들 중의 순서가 아니라 전체 요소 중의 순서 중 앞에 정의한 선택자에 의해 선택되는 요소를 의미한다. */
+    width: 75px;
+    height: 75px;
+    background-color: dodgerblue;
+    /* position 속성 : 요소의 자리잡기 설정
+        - static : top, right, bottom, left 속성이 무시된다. 본연의 위치를 고수한다. (기본 값)
+        - relative : static 일때의 위치를 기준으로 움직인다.
+        - absolute : position 속성 값이 static이 아닌 가장 가까운 부모를 기준으로 움직인다. 없으면 body 기준. 다른 요소의 흐름을 방해하지 않는다.(= 없는것 처럼 작동)
+        - fixed : 다 무시하고 body 기준이고 스크롤에 영향을 받지 않는다. 다른 요소의 흐름을 방해하지 않는다.(= 없는것 처럼 작동)
+    */
+    position: absolute;
+    z-index : 1;
+    /* z-index : 요소가 누가 누구를 가릴지 설정한다. 숫자가 클수록 가리게된다. 작을수록 가려지게 된다. 기본값 0 */
+}
+
+body > div.container > div.item:nth-child(2) {
+    background-color: chocolate;
+    position: relative;
+}
+
+body > div.container > div.item:nth-child(2) > div {
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: fixed;
+}
