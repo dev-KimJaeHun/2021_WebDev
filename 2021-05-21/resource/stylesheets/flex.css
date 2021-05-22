@@ -1,0 +1,40 @@
+body > header {
+    background-color: lightcoral;
+    display: flex;
+}
+
+body > header > div.spring {
+    background-color: lightblue;
+    flex: 1;
+}
+
+body > div {
+    width: 250px;
+    height: 500px;
+    background-color: lightcoral;
+
+    display: flex;
+    flex-direction: column;
+    /* flex-direction : display가 flex 안 요소의 자식들을 정렬 시킬 방향 (기본 : row) 
+        - row : 행 방향(가로)
+        - row-reverse : 행 방향 반대로
+        - column : 열 방향(세로)
+        - column-reverse : 열 방향 반대로
+    */
+    justify-content: center;
+    /* justify-content : flex-direction 방향과 수평한 방향의 정렬 기준
+        - flex-start
+        - center
+        - flex-end
+    */
+    align-items: center;
+    /* align-items :  */
+}
+
+body > div > div {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}

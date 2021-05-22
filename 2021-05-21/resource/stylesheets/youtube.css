@@ -1,0 +1,117 @@
+/* 다중 선택 : 여러개의 선택자 한테 동일한 속성을 주어야 할때
+    콤마로 구분한다. */
+ul, ol {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+
+ul {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+body {
+    margin: 0;
+}
+
+body > header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+body > header > *:first-child {
+    margin-left: 1rem;
+}
+
+body > header > *:last-child {
+    margin-right: 1rem;
+}
+
+body > header > ul {
+    align-items: center;
+    display: flex;
+}
+
+body > header > ul > li {
+    margin: 1rem;
+}
+
+body > header > ul > li > i.fas {
+    color: dimgray;
+    font-size: 1.125rem;
+}
+
+body > header > ul > li.logo {
+    top: 0.125rem;
+    position: relative;
+}
+
+body > header > ul > li.logo > img {
+    height: 1.25rem;
+}
+
+body > header > ul > li.logo > span {
+    top: -0.425rem;
+    left: calc(100%+-0.25rem);
+    /* li.logo 의 가로 크기 만큼 left를 줬다. */
+    color: gray;
+    font-size: 0.7rem;
+    position: absolute;
+}
+
+body > header > ul > li > button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent; /* 투명 */
+    border: 0.0625rem solid dodgerblue;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: dodgerblue;
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+body > header > ul > li > button > span.icon {
+    width: 1rem;
+    height: 1rem;
+    background-color: dodgerblue;
+    border: 0.25rem solid dodgerblue;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+body > header > ul > li > button > span.icon > i.fas {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) ;
+    /* transform 속성 : 요소를 변화시킨다.
+        - translate(a, b) : a만큼 x축, b만큼 y축으로 이동.
+        - translate(a) : a만큼 x축
+        - translate(b) : b만큼 y축
+        - 단, translate 값이 % 일때에는 본인의 크기를 기준으로 한다. (x에선 가로, y에선 세로 크기)
+    */
+}
+
+body > header > div.spring {
+    flex: 1;
+
+}
