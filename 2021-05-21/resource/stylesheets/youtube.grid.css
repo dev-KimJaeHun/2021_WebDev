@@ -1,0 +1,93 @@
+h6 {
+    font: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
+body {
+    margin: 0;
+}
+
+body > div.container {
+    width: 100%;
+    /* height: 100vh; */
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+body > div.container > div.item > div.thumnail {
+    position: relative;
+}
+
+body > div.container > div.item > div.thumnail > img {
+    width: 100%;
+}
+
+body > div.container > div.item > div.thumnail > span.duration {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    /*  배경 색상의 투명도 만 추가
+        - rgba(r, g, b, 투명도) // 이미 투명도는 0~1 소수점
+        - #rrggbbaa 
+     */
+    border-radius: 0.125rem;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.2rem;
+    position: absolute;
+}
+
+body > div.container > div.item > div.detail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+body > div.container > div.item > div.detail > div.channel > img {
+    background-color: dodgerblue;
+    border-radius: 50%;
+    padding: 1.125rem;
+}
+
+body > div.container > div.item > div.detail > div.title {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 0.5rem;
+
+}
+
+body > div.container > div.item > div.detail > div.title > span {
+    color: gray;
+    font-size: 0.05rem;
+}
+
+@media(max-width: 62.5rem) {
+    /* 화면 가로크기가 50rem(800px) 이하 일때에 적용할 선택자의 모음 */
+    body > div.container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 46.875rem) {
+    /* 화면 가로크기가 31.25rem(500px) 이하 일때에 적용할 선택자의 모음 */
+    body > div.container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 31.25rem) {
+     /* 화면 가로크기가 31.25rem(500px) 이하 일때에 적용할 선택자의 모음 */
+    body > div.container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 0rem;
+    }
+}
