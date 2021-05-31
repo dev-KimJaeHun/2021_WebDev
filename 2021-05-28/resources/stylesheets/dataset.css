@@ -1,0 +1,8 @@
+body > ul > li {
+    cursor: pointer;
+    user-select: none;
+}
+
+body > ul > li:hover {
+    text-decoration: underline;
+}
