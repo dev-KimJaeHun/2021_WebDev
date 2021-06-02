@@ -10,14 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script defer src="resources/scripts/index.js"></script>
     <title>CHANEL</title>
 </head>
 <body>
+    <form id="search-form" class="search">
+        <img alt="닫기" class="search-closer" id="search-closer" src="resources/images/close.png">
+        <div class="container">
+            <label>
+                <input maxlength="50" name="keyword" placeholder="검색하기" type="text">
+                <img art="검색" src="resources/images/search.png">
+            </label>
+        </div>
+    </form>
     <header>
         <div>
-            <h1>CHANEL</h1>
-            <ul>
+            <h1 class="transition-applied">CHANEL</h1>
+            <ul class="transition-applied">
                 <li>
                     <a href="#">오뜨 꾸뛰르</a>
                 </li>
@@ -29,6 +39,16 @@
                 </li>
             </ul>
         </div>
+        <ul class="transition-applied">
+            <li id="search-opener">
+                <!-- <i class="fas fa-search"></i> -->
+                <img alt="검색" src="resources/images/header-search-new.png">
+            </li>
+            <li>
+                <!-- <i class="far fa-star"></i> -->
+                <img alt="위시리스트" src="resources/images/header-favorite.png">
+            </li>
+        </ul>
     </header>
     <section class="splash">
         <div class="visible"></div>
@@ -39,6 +59,28 @@
             <b>6월 부티크에서 만나보세요.</b>
             <button>더 보기</button>
         </article>
+    </section>
+    <section class="cs">
+        <div>
+            <div>
+                <h2>고객 문의</h2>
+                <span>샤넬 고객센터 연결:</span>
+                <ul>
+                    <li>
+                        <span>CALL</span>
+                        <img alt src="resources/images/right.png">
+                    </li>
+                    <li>
+                        <span>이메일</span>
+                        <img alt src="resources/images/right.png">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>위치 찾기</h2>
+                <span>가까운 부티크 찾기 : <br>서비스, 오픈 시간, 연락처</span>
+            </div>
+        </div>
     </section>
     <footer>
         Footer!

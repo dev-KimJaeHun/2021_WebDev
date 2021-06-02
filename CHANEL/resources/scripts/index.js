@@ -18,3 +18,16 @@ function circulateSplash(currentSplashIndex) {
     }, CIRCULATION_INTERVAL);
 };
 circulateSplash(0);
+
+// 검색 이벤트
+let searchOpener = window.document.getElementById('search-opener');
+let searchCloser = window.document.getElementById('search-closer');
+searchOpener.addEventListener('click', () => {
+    let searchForm = window.document.getElementById('search-form');
+    searchForm['keyword'].value = '';
+    searchForm['keyword'].focus();
+    window.document.body.classList.add('searching');
+});
+searchCloser.addEventListener('click', () => {
+    window.document.body.classList.remove('searching');
+});
