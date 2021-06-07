@@ -1,0 +1,165 @@
+body > main {
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 90rem;
+    height: 80vh;
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+body > main > section.profile {
+    align-items: center;
+    background-color: var(--profile-background-color);
+    border-top-left-radius: var(--content-border-radius);
+    border-bottom-left-radius: var(--content-border-radius);
+    color: var(--profile-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:
+            calc(var(--content-padding) * 2)
+            calc(var(--content-padding) * 2)
+            calc(var(--content-padding) * 2)
+            var(--content-padding);
+}
+
+body > main > section.profile > div.profile-image {
+    width: 10.5rem;
+    height: 10.5rem;
+    border: 0.225rem solid #ffffff;
+    border-radius: 50%;
+    margin: 0 2rem 0.5rem 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+body > main > section.profile > div.profile-image > img {
+    top: 50%;
+    left: 50%;
+    width: 162.5%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+body > main > section.profile > span.name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0.333rem 0;
+}
+
+body > main > section.profile > span.misc {
+    font-size: 1.05rem;
+}
+
+body > main > section.profile > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+body > main > section.profile > ul > li {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0.25rem;
+    position: relative;
+    transition-duration: 250ms;
+}
+
+body > main > section.profile > ul > li:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+body > main > section.profile > ul > li:hover {
+    backdrop-filter: brightness(1.1);
+}
+
+body > main > section.profile > ul > li > a > img {
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+body > main > section.profile > div.spring {
+    flex: 1;
+}
+
+body > main > section.profile > button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125rem solid #ffffff;
+    border-radius: 999px;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition-duration: 250ms;
+}
+
+body > main > section.profile > button:hover {
+    background-color: #ffffff;
+    color: var(--profile-background-color);
+}
+
+body > main > section.content {
+    left: calc(var(--content-border-radius) * -1);
+    background-color: var(--content-background-color);
+    border-radius: var(--content-border-radius);
+    flex: 1;
+    padding: var(--content-padding);
+    position: relative;
+}
+
+body > main > nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > main > nav > ul {
+    background-color: var(--content-background-color);
+    border-radius: 999px;
+    padding: 0.75rem 0;
+    user-select: none;
+}
+
+body > main > nav > ul > li {
+    padding: var(--nav-item-padding);
+}
+
+body > main > nav > ul > li > a > img {
+    width: 1.75rem;
+    filter: grayscale(1);
+    -webkit-user-drag: none;
+}
+
+body > main > nav > ul > li:hover > a > img {
+    filter: grayscale(0);
+}
+
+body > main > nav > ul > li.selected {
+    pointer-events: none;
+}
+
+body > main > nav > ul > li.selected > a > img {
+    filter: grayscale(0);
+}
+
+body > main > nav > div {
+    flex: 1;
+}
